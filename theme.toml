@@ -1,0 +1,4 @@
+[flavor]
+# dark = "eldritch-dark"
+dark = "catppuccin-macchiato"
+light = "eldritch-light"

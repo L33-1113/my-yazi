@@ -1,0 +1,124 @@
+
+[mgr]
+cwd = { fg = "#ebfafa", bg = "#212337" }
+hovered = { fg = "#37f499", bg = "#292e42", bold = true }
+preview_hovered = { fg = "#00FA82", bg = "#292e42", italic = true }
+find_keyword = { fg = "#f7c67f", bg = "#212337", underline = true }
+find_position = { fg = "#7081d0", bg = "#212337" }
+marker_copied = { fg = "#37f499", bg = "#212337" }
+marker_cut = { fg = "#f16c75", bg = "#212337" }
+marker_marked = { fg = "#a48cf2", bg = "#212337" }
+marker_selected = { fg = "#04d1f9", bg = "#212337" }
+count_copied = { fg = "#37f499", bg = "#212337" }
+count_cut = { fg = "#f16c75", bg = "#212337" }
+count_selected = { fg = "#04d1f9", bg = "#212337" }
+border_symbol = "│"
+border_style = { fg = "#6473B7", bg = "#212337" }
+syntect_theme = "~/Downloads/Eldritch.tmTheme"
+
+[tabs]
+active = { fg = "#ebfafa", bg = "#292e42", bold = true }
+inactive = { fg = "#ABB4DA", bg = "#212337" }
+sep_inner = { open = "[", close = "]" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#37f499", bg = "#212337" }
+normal_alt = { fg = "#04d1f9", bg = "#212337" }
+select_main = { fg = "#f7c67f", bg = "#292e42" }
+select_alt = { fg = "#a48cf2", bg = "#292e42" }
+unset_main = { fg = "#7081d0", bg = "#212337" }
+unset_alt = { fg = "#ABB4DA", bg = "#212337" }
+
+[status]
+overall = { fg = "#ebfafa", bg = "#171928" }
+sep_left = { open = "", close = "]" }
+sep_right = { open = "[", close = "" }
+perm_type = { fg = "#37f499", bg = "#171928" }
+perm_read = { fg = "#04d1f9", bg = "#171928" }
+perm_write = { fg = "#f7c67f", bg = "#171928" }
+perm_exec = { fg = "#a48cf2", bg = "#171928" }
+perm_sep = { fg = "#6473B7", bg = "#171928" }
+progress_label = { fg = "#ebfafa", bg = "#171928" }
+progress_normal = { fg = "#37f499", bg = "#171928" }
+progress_error = { fg = "#f16c75", bg = "#171928" }
+
+[which]
+cols = 2
+mask = { fg = "#ABB4DA", bg = "#212337" }
+cand = { fg = "#37f499", bg = "#212337" }
+rest = { fg = "#7081d0", bg = "#212337" }
+desc = { fg = "#f7c67f", bg = "#212337" }
+separator = " -> "
+separator_style = { fg = "#6473B7", bg = "#212337" }
+
+[confirm]
+border = { fg = "#6473B7", bg = "#212337" }
+title = { fg = "#ebfafa", bg = "#212337", bold = true }
+content = { fg = "#ABB4DA", bg = "#212337" }
+list = { fg = "#7081d0", bg = "#212337" }
+btn_yes = { fg = "#37f499", bg = "#292e42", bold = true }
+btn_no = { fg = "#f16c75", bg = "#292e42", bold = true }
+btn_labels = ["Yes", "No"]
+
+[spot]
+border = { fg = "#6473B7", bg = "#212337" }
+title = { fg = "#ebfafa", bg = "#212337", bold = true }
+tbl_col = { fg = "#04d1f9", bg = "#292e42" }
+tbl_cell = { fg = "#f7c67f", bg = "#292e42" }
+
+[notify]
+title_info = { fg = "#04d1f9", bg = "#212337" }
+title_warn = { fg = "#f7c67f", bg = "#212337" }
+title_error = { fg = "#f16c75", bg = "#212337" }
+
+[pick]
+border = { fg = "#6473B7", bg = "#212337" }
+active = { fg = "#37f499", bg = "#292e42", bold = true }
+inactive = { fg = "#ABB4DA", bg = "#212337" }
+
+[input]
+border = { fg = "#6473B7", bg = "#212337" }
+title = { fg = "#ebfafa", bg = "#212337", bold = true }
+value = { fg = "#ABB4DA", bg = "#212337" }
+selected = { fg = "#04d1f9", bg = "#292e42" }
+
+[cmp]
+border = { fg = "#6473B7", bg = "#212337" }
+active = { fg = "#37f499", bg = "#292e42", bold = true }
+inactive = { fg = "#ABB4DA", bg = "#212337" }
+icon_file = "📄"
+icon_folder = "📁"
+icon_command = "▶"
+
+[tasks]
+border = { fg = "#6473B7", bg = "#212337" }
+title = { fg = "#ebfafa", bg = "#212337", bold = true }
+hovered = { fg = "#04d1f9", bg = "#292e42" }
+
+[help]
+on = { fg = "#37f499", bg = "#212337" }
+run = { fg = "#04d1f9", bg = "#212337" }
+desc = { fg = "#ABB4DA", bg = "#212337" }
+hovered = { fg = "#f7c67f", bg = "#292e42" }
+footer = { fg = "#7081d0", bg = "#212337" }
+icon_info = "ℹ"
+icon_warn = "⚠"
+icon_error = "✗"
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#f7c67f" },
+  { mime = "video/*", fg = "#a48cf2" },
+  { mime = "audio/*", fg = "#a48cf2" },
+  { mime = "inode/empty", fg = "#04d1f9" },
+  { name = "*", is = "orphan", fg = "#f16c75" },
+  { name = "*/", fg = "#37f499" },
+]
+
+[icon]
+prepend_dirs = [{ name = "desktop", text = "📁", fg = "#a48cf2" }]
+append_exts = [
+  { name = "png", text = "🖼️", fg = "#f7c67f" },
+  { name = "mp3", text = "🎵", fg = "#a48cf2" },
+]
