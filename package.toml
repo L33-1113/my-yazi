@@ -3,6 +3,11 @@ use = "yazi-rs/plugins:full-border"
 rev = "de53d90"
 hash = "3996fc74044bc44144b323686f887e1"
 
+[[plugin.deps]]
+use = "macydnah/office"
+rev = "4002d36"
+hash = "9c68763dd4f2799f7cfee1e9c3e819a9"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
 rev = "d3fd3a5"

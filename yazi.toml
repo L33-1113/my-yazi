@@ -145,6 +145,12 @@ preloaders = [
   # Font
   { mime = "font/*", run = "font" },
   { mime = "application/ms-opentype", run = "font" },
+  # Office Documents
+  { mime = "application/openxmlformats-officedocument.*", run = "office" },
+  { mime = "application/oasis.opendocument.*", run = "office" },
+  { mime = "application/ms-*", run = "office" },
+  { mime = "application/msword", run = "office" },
+  { name = "*.docx", run = "office" },
 ]
 previewers = [
   { name = "*/", run = "folder" },
@@ -176,6 +182,12 @@ previewers = [
   { mime = "inode/empty", run = "empty" },
   # Fallback
   { name = "*", run = "file" },
+  # Office Documents
+  { mime = "application/openxmlformats-officedocument.*", run = "office" },
+  { mime = "application/oasis.opendocument.*", run = "office" },
+  { mime = "application/ms-*", run = "office" },
+  { mime = "application/msword", run = "office" },
+  { name = "*.docx", run = "office" },
 ]
 
 [input]
