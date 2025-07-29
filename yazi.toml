@@ -9,7 +9,7 @@ sort_sensitive = false
 sort_reverse = false
 sort_dir_first = true
 sort_translit = false
-linemode = "mtime"
+linemode = "size_and_mtime"
 show_hidden = false
 show_symlink = true
 scrolloff = 5
@@ -17,7 +17,7 @@ mouse_events = ["click", "scroll"]
 title_format = "Yazi: {cwd}"
 
 [preview]
-wrap = "no"
+wrap = "yes"
 tab_size = 2
 max_width = 1200
 max_height = 1000
