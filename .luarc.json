@@ -1,0 +1,12 @@
+{
+  "diagnostics": {
+    "globals": [
+      "Status",
+      "Header",
+      "cx",
+      "ya",
+      "ui",
+      "Linemode"
+    ]
+  }
+}
