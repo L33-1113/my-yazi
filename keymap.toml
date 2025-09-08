@@ -545,3 +545,9 @@ desc = "Search file by content (rg)"
 on = ["f", "a"]
 run = "plugin fr rga"
 desc = "Search file by content (rga)"
+
+# ouch compress
+# [[mgr.prepend_keymap]]
+# on = ["C"]
+# run = "plugin ouch"
+# desc = "Compress with ouch"
