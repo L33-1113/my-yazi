@@ -182,6 +182,18 @@ run = 'piper --format=url -- tar tf "$1"'
 mime = "audio/*"
 run = "exifaudio"
 
+[[plugin.prepend_previewers]]
+mime = "{image,audio,video}/*"
+run = "mediainfo"
+
+[[plugin.prepend_previewers]]
+mime = "application/x-subrip"
+run = "mediainfo"
+
+[[plugin.prepend_previewers]]
+mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}"
+run = "ouch"
+
 previewers = [
   { name = "*/", run = "folder" },
   # Code
