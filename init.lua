@@ -1,4 +1,8 @@
-require("full-border").setup()
+require("full-border"):setup({
+	type = ui.Border.ROUNDED,
+})
+
+require("omp"):setup()
 
 -- show symlink in status bar
 Status:children_add(function(self)
