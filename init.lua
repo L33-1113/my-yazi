@@ -4,6 +4,8 @@ require("full-border"):setup({
 
 require("omp"):setup()
 
+require("git"):setup()
+
 -- show symlink in status bar
 Status:children_add(function(self)
 	local h = self._current.hovered

@@ -202,6 +202,17 @@ run = "mediainfo"
 mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}"
 run = "ouch"
 
+# git.yazi
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id = "git"
+name = "*/"
+run = "git"
+
 previewers = [
   { name = "*/", run = "folder" },
   # Code
