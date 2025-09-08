@@ -230,6 +230,10 @@ keymap = [
   { on = [
     "g",
     "d",
+  ], run = "cd ~/Documents", desc = "Go ~/Documents" },
+  { on = [
+    "g",
+    "w",
   ], run = "cd ~/Downloads", desc = "Go ~/Downloads" },
   { on = [
     "g",
@@ -530,3 +534,14 @@ run = 'shell -- qlmanage -p "$@"'
 on = "<Esc>"
 run = "close"
 desc = "Cancel input"
+
+# lpnh/fr
+[[mgr.prepend_keymap]]
+on = ["f", "r"]
+run = "plugin fr rg"
+desc = "Search file by content (rg)"
+
+[[mgr.prepend_keymap]]
+on = ["f", "a"]
+run = "plugin fr rga"
+desc = "Search file by content (rga)"
