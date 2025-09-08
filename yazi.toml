@@ -153,6 +153,11 @@ preloaders = [
   # { name = "*.docx", run = "office" },
 ]
 
+# nbpreview
+[[plugin.prepend_previewers]]
+name = "*.ipynb"
+run = 'piper -- nbpreview --nerd-font --decorated --unicode --color --images --color-system=standard "$1"'
+
 # piper
 [[plugin.prepend_previewers]]
 name = "*.md"
@@ -178,10 +183,12 @@ run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'
 name = "*.tar*"
 run = 'piper --format=url -- tar tf "$1"'
 
+# exifaudio
 [[plugin.prepend_previewers]]
 mime = "audio/*"
 run = "exifaudio"
 
+# mediainfo
 [[plugin.prepend_previewers]]
 mime = "{image,audio,video}/*"
 run = "mediainfo"
@@ -190,6 +197,7 @@ run = "mediainfo"
 mime = "application/x-subrip"
 run = "mediainfo"
 
+# ouch
 [[plugin.prepend_previewers]]
 mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}"
 run = "ouch"

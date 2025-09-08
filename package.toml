@@ -38,6 +38,16 @@ use = "ndtoan96/ouch"
 rev = "0742fff"
 hash = "2bd799b42b8e42b8ef100310be71f8d1"
 
+[[plugin.deps]]
+use = "AnirudhG07/nbpreview"
+rev = "7fb073f"
+hash = "a3e32d62ea3cc703e6bf677bdb18a544"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "d7588f6"
+hash = "e56b7abf3c06e8ce496eadcca168c093"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
 rev = "d3fd3a5"
