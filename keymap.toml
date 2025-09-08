@@ -546,6 +546,12 @@ on = ["f", "a"]
 run = "plugin fr rga"
 desc = "Search file by content (rga)"
 
+# smart filter
+[[mgr.prepend_keymap]]
+on = "F"
+run = "plugin smart-filter"
+desc = "Smart filter"
+
 # ouch compress
 # [[mgr.prepend_keymap]]
 # on = ["C"]
