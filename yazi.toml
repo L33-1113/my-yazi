@@ -12,7 +12,7 @@ sort_translit = false
 linemode = "size_and_mtime"
 show_hidden = false
 show_symlink = true
-scrolloff = 5
+scrolloff = 26
 mouse_events = ["click", "scroll"]
 title_format = "Yazi: {cwd}"
 
